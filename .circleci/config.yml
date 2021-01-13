@@ -84,9 +84,9 @@ jobs:
             zip ../build.zip -r * .[^.]*
             echo "Build Successfully"
       - run: 
-          name: deploy to AWS Cloudfront true
+          name: deploy to AWS Cloudfront
           command: |
-            aws configure set preview.cloudfront
+            aws configure set preview.cloudfront true
             if [ "${CIRCLE_BRANCH}" == "master" ]
             then
               aws cloudfront create-invalidation --distribution-id ${PRODUCTION_DISTRIBUTION_ID} --paths /\*
