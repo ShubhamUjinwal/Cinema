@@ -24,7 +24,7 @@ aliases:
       paths:
         - node_modules
       key: app-{{ checksum "package.json" }}
-  - &install_aws-cli
+  - &install_aws_cli
     run:
       name: Installing AWS CLI
       working_directory: /
