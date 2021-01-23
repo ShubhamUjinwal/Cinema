@@ -163,7 +163,7 @@ workflows:
   build_and_deploy:
     jobs:
       - build
-      - notify-via-slack:
+      - deploy-to-aws-s3:
           requires:
             - build
           filters:
