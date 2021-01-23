@@ -145,7 +145,7 @@ jobs:
                     {
                       "type": "mrkdwn",
                       "text": "*Author*:\n$CIRCLE_PROJECT_USERNAME"
-                    },
+                    }
                   ]
                 },
                 {
@@ -156,9 +156,9 @@ jobs:
                       "text": {
                         "type": "plain_text",
                         "text": "View Job"
-                      }
-                    },
-                    "url": "${CIRCLE_BUILD_URL}"
+                      },
+                      "url": "${CIRCLE_BUILD_URL}"
+                    }
                   ]
                 }
               ]
