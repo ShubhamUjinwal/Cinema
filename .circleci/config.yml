@@ -60,6 +60,13 @@ jobs:
       - *restore_cache
       - *install_dependencies
       - *save_cache
+      - run: 
+          name: Copy Deploy Folder
+          command: cp -r deploy artifacts/deploy
+      - persist_to_workspace:
+          root: ./
+          paths: 
+            - artifacts
   
   terraform-validate:
     executor: terraform-executor
