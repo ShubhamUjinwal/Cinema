@@ -1,6 +1,6 @@
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-auto-rows: 460px;
     row-gap: 2rem;
     column-gap: 2rem;
@@ -13,7 +13,7 @@
     display: grid;
     color: #ffffff;
     box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
-    height: 80%;
+    height: 100%;
     width: 100%;
     border-radius: 4px;
     transition: all 500ms;
