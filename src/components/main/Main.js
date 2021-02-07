@@ -23,7 +23,7 @@ const Main = (props) => {
   useEffect(() => {
     setResponsePageNumber(currentPage, totalPages);
     // loadMoreMovies(movieType, currentPage);
-    loadMoreMovies(movieType, 1);
+    // loadMoreMovies(movieType, 1);
   }, [currentPage, totalPages]);
 
   const fetchData = () => {
