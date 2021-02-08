@@ -12,11 +12,20 @@ import Media from './media/Media';
 import Reviews from './reviews/Reviews';
 import { movieDetails } from '../../../redux/actions/movies';
 import { IMAGE_URL } from '../../../services/movies.service';
+import Spinner from '../../spinner/Spinner';
 
 const Details = (props) => {
   const { movieDetails, movie } = props;
   const [details, setDetails] = useState();
+  const [loading, setLoading] = useState(false);
   const { id } = useParams();
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
 
   useEffect(() => {
     if (movie.length === 0) {
@@ -28,7 +37,9 @@ const Details = (props) => {
 
   return (
     <>
-      {details && (
+      {loading
+        ? <Spinner />
+        : details && (
         <div className="movie-container">
           <div className="movie-bg" style={{ backgroundImage: `url(${IMAGE_URL}${details.backdrop_path})` }}></div>
           <div className="movie-overlay"></div>
@@ -71,7 +82,7 @@ const Details = (props) => {
             </div>
           </div>
         </div>
-      )}
+        )}
     </>
   );
 };
