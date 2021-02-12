@@ -6,6 +6,7 @@ import MainContent from '../content/main-content/MainContent';
 import Spinner from '../spinner/Spinner';
 import { loadMoreMovies, setResponsePageNumber } from '../../redux/actions/movies';
 import SearchResult from '../content/search-result/SearchResult';
+import Header from '../../components/header/Header';
 
 const Main = (props) => {
   const { loadMoreMovies, page, totalPages, setResponsePageNumber, movieType, searchResult } = props;
@@ -34,11 +35,9 @@ const Main = (props) => {
     }
   };
 
-  const handleScroll = () => {
-    const containerHeight = mainRef.current.getBoundingClientRect().height;
-    const { top: bottomLineTop } = bottomLineRef.current.getBoundingClientRect();
-    if (bottomLineTop <= containerHeight) {
-      // fetch data
+  const handleScroll = (e) => {
+    const element = e.target;
+    if (element.scrollHeight - element.scrollTop === element.clientHeight) {
       fetchData();
     }
   };
@@ -46,7 +45,8 @@ const Main = (props) => {
   return (
     <>
       <div className="main" ref={mainRef} onScroll={handleScroll}>
-      {loading ? <Spinner /> : <>{searchResult && searchResult.length === 0 ? <MainContent /> : <SearchResult />}</>}
+      <Header />
+      {loading ? <Spinner /> : <>{searchResult.length === 0 ? <MainContent /> : <SearchResult />}</>}
         <div ref={bottomLineRef}></div>
       </div>
     </>
