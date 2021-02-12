@@ -13,6 +13,7 @@ import Reviews from './reviews/Reviews';
 import { movieDetails } from '../../../redux/actions/movies';
 import { IMAGE_URL } from '../../../services/movies.service';
 import Spinner from '../../spinner/Spinner';
+import Header from '../../header/Header';
 
 const Details = (props) => {
   const { movieDetails, movie } = props;
@@ -41,6 +42,7 @@ const Details = (props) => {
         ? <Spinner />
         : details && (
         <div className="movie-container">
+        <Header />
           <div className="movie-bg" style={{ backgroundImage: `url(${IMAGE_URL}${details.backdrop_path})` }}></div>
           <div className="movie-overlay"></div>
           <div className="movie-details">
