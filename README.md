@@ -1,5 +1,9 @@
-<<<<<<< HEAD
+
 # Cinema
+
+## Demo
+Link: https://d2nc0wl56qsh92.cloudfront.net/
+
 =======
 # Getting Started with Create React App
 
