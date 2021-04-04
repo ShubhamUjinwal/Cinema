@@ -25,3 +25,4 @@ Link: https://d2nc0wl56qsh92.cloudfront.net/
 4. Dynamic UI.
 
 ### `Architecture`
+![Cinema_Architecture](https://user-images.githubusercontent.com/58487474/113517581-c466ef00-954e-11eb-9d5b-d7086eecefae.png)
