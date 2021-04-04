@@ -26,3 +26,10 @@ Link: https://d2nc0wl56qsh92.cloudfront.net/
 
 ### `Architecture`
 ![Cinema_Architecture](https://user-images.githubusercontent.com/58487474/113517581-c466ef00-954e-11eb-9d5b-d7086eecefae.png)
+
+### `Screenshots`
+![Capture](https://user-images.githubusercontent.com/58487474/113517830-620eee00-9550-11eb-85dd-01fca4ed6e0d.PNG)
+![Capture1](https://user-images.githubusercontent.com/58487474/113517832-62a78480-9550-11eb-88c7-9cb337bb5d44.PNG)
+![Capture2](https://user-images.githubusercontent.com/58487474/113517834-63401b00-9550-11eb-84e3-7b26cd2ab1a9.PNG)
+![Capture3](https://user-images.githubusercontent.com/58487474/113517835-63401b00-9550-11eb-8c3d-f6a3304f09ff.PNG)
+
