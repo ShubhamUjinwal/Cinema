@@ -1,0 +1,21 @@
+{
+    "appName": "cinema",
+    "roleName": "pinpointLambdaRolee5f8a284",
+    "cloudformationPolicyName": "cloudformationPolicye5f8a284",
+    "cloudWatchPolicyName": "cloudWatchPolicye5f8a284",
+    "pinpointPolicyName": "pinpointPolicye5f8a284",
+    "authPolicyName": "pinpoint_amplify_e5f8a284",
+    "unauthPolicyName": "pinpoint_amplify_e5f8a284",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

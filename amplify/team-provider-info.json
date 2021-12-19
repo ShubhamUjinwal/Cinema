@@ -1,0 +1,21 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cinema-dev-233202-authRole",
+      "UnauthRoleArn": "arn:aws:iam::865650539905:role/amplify-cinema-dev-233202-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::865650539905:role/amplify-cinema-dev-233202-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cinema-dev-233202-deployment",
+      "UnauthRoleName": "amplify-cinema-dev-233202-unauthRole",
+      "StackName": "amplify-cinema-dev-233202",
+      "StackId": "arn:aws:cloudformation:us-east-1:865650539905:stack/amplify-cinema-dev-233202/eef6acf0-c740-11eb-8a49-0e46d57ace87",
+      "AmplifyAppId": "d1ilwcfdlftehm",
+      "AuthTriggerTemplateURL": ""
+    },
+    "categories": {
+      "auth": {
+        "cognito821fb1a0": {}
+      }
+    }
+  }
+}
