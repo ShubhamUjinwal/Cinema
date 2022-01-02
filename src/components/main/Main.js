@@ -37,7 +37,8 @@ const Main = (props) => {
 
   const handleScroll = (e) => {
     const element = e.target;
-    if (element.scrollHeight - element.scrollTop === element.clientHeight) {
+    console.log('element', element.scrollHeight, element.scrollTop, element.clientHeight, element.scrollHeight - element.scrollTop - element.clientHeight);
+    if (element.scrollHeight - element.scrollTop <= element.clientHeight) {
       fetchData();
     }
   };
