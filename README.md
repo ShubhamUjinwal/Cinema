@@ -6,7 +6,7 @@ Created a Cinema web application where:
 3. A User can search for any specific movie.
 
 ### `Demo`
-Link: https://d2nc0wl56qsh92.cloudfront.net/
+Link: https://d3jinoktjn7d3v.cloudfront.net/
 
 ### `Technology`
 1. **Front-end:** ReactJs and Redux, ES6, HTML, CSS.
