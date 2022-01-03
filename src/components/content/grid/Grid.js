@@ -39,7 +39,7 @@ const Grid = (props) => {
                   </button>
                 </div>
                 <div className="grid-detail">
-                  <span className="grid-detail-title">{data.title}</span>
+                  {/* <span className="grid-detail-title">{data.title}</span> */}
                   <div className="grid-detail-rating">
                     <Rating rating={data.vote_average} totalStars={10} />
                     &nbsp;&nbsp;
